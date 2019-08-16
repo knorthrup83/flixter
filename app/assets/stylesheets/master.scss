@@ -1,1 +1,18 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+.navbar {
+	font-family: "Helvetica Neue", Helvetica;
+	font-weight: 200;
+	box-shadow: 0px 1px 3px #2a2a2a;
+	background: image_url('mosaic.png');
+	color: white;
+}
+
+.navbar-light .navbar-brand {
+	font-family: "Special Elite", cursive;
+	font-weight: 400;
+	color: white;
+	font-size: 30px;
+}
+
