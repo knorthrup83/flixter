@@ -70,6 +70,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
   gem 'figaro'
   gem 'fog-aws'
   gem 'mini_magick'
+  gem 'carrierwave-aws'
 
   source 'https://rails-assets.org' do
     gem 'rails-assets-tether', '>= 1.3.3'
