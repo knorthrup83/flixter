@@ -3,6 +3,7 @@ class LessonsController < ApplicationController
 	before_action :require_authorized_for_current_lesson, only: [:show]
 
 	def show
+
 	end
 
 	private
@@ -13,8 +14,8 @@ class LessonsController < ApplicationController
 	end
 
 	def require_authorized_for_current_lesson
-		if current_lesson.user != current_user
-			render plain: "Unauthorized", status: :unauthorized
+		if current_user.enrolled_in?(current_lesson.section.course) == false
+			redirect_to course_path(current_lesson.section.course), alert: 'You Are Not Enrolled in This Course!'
 		end
 	end
 end

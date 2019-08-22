@@ -71,6 +71,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
   gem 'fog-aws'
   gem 'mini_magick'
   gem 'carrierwave-aws'
+  gem 'stripe'
 
 
   source 'https://rails-assets.org' do
